@@ -34,12 +34,7 @@ public:
     explicit DatabaseSettingWidgetMetaData(QWidget* parent = nullptr);
     Q_DISABLE_COPY(DatabaseSettingWidgetMetaData);
     ~DatabaseSettingWidgetMetaData() override;
-
-    inline bool hasAdvancedMode() const override
-    {
-        return false;
-    }
-
+    
 public slots:
     void initialize() override;
     void uninitialize() override;
